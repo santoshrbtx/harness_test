@@ -1,12 +1,11 @@
 using System;
 
-class Calculator
+public class Calculator
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("=== Simple Calculator ===\n");
 
-        // Basic arithmetic operations
         double num1 = 15;
         double num2 = 7;
 
@@ -21,20 +20,19 @@ class Calculator
         Console.WriteLine($"Modulus: {num1} % {num2} = {Modulus(num1, num2)}");
         Console.WriteLine($"Power: {num1} ^ {num2} = {Power(num1, num2):F0}");
 
-        // Additional calculations
         Console.WriteLine("\n--- Additional Calculations ---");
         Console.WriteLine($"Square of {num1}: {Square(num1)}");
         Console.WriteLine($"Square root of {num1}: {SquareRoot(num1):F2}");
         Console.WriteLine($"Absolute value of -{num2}: {Absolute(-num2)}");
     }
 
-    static double Add(double a, double b) => a + b;
-    static double Subtract(double a, double b) => a - b;
-    static double Multiply(double a, double b) => a * b;
-    static double Divide(double a, double b) => b != 0 ? a / b : 0;
-    static double Modulus(double a, double b) => a % b;
-    static double Power(double a, double b) => Math.Pow(a, b);
-    static double Square(double a) => a * a;
-    static double SquareRoot(double a) => Math.Sqrt(a);
-    static double Absolute(double a) => Math.Abs(a);
+    public static double Add(double a, double b) => a + b;
+    public static double Subtract(double a, double b) => a - b;
+    public static double Multiply(double a, double b) => a * b;
+    public static double Divide(double a, double b) => b != 0 ? a / b : 0;
+    public static double Modulus(double a, double b) => a % b;
+    public static double Power(double a, double b) => Math.Pow(a, b);
+    public static double Square(double a) => a * a;
+    public static double SquareRoot(double a) => Math.Sqrt(a);
+    public static double Absolute(double a) => Math.Abs(a);
 }
