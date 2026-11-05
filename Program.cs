@@ -29,7 +29,12 @@ public class Calculator
     public static double Add(double a, double b) => a + b;
     public static double Subtract(double a, double b) => a - b;
     public static double Multiply(double a, double b) => a * b;
-    public static double Divide(double a, double b) => b != 0 ? a / b : 0;
+    public static double Divide(double a, double b)
+    {
+        if (b == 0)
+            return 0;
+        return a / b;
+    }
     public static double Modulus(double a, double b) => a % b;
     public static double Power(double a, double b) => Math.Pow(a, b);
     public static double Square(double a) => a * a;
