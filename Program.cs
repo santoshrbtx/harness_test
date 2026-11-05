@@ -4,10 +4,10 @@ public class Calculator
 {
     public static void Main()
     {
-        Console.WriteLine("=== Simple Calculator ===\n");
+        Console.WriteLine("=== Simple Calculator v1.1 ===\n");
 
-        double num1 = 15;
-        double num2 = 7;
+        double num1 = 20;
+        double num2 = 5;
 
         Console.WriteLine($"Number 1: {num1}");
         Console.WriteLine($"Number 2: {num2}\n");
